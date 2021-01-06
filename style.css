@@ -1,0 +1,758 @@
+/* Custom Fonts*/
+@font-face{
+    font-family: 'Yellowtail-Regular-webfont';
+    src:url('Fonts/Yellowtail-Regular-webfont.woff') format('woff');
+    src: url('/Fonts/Yellowtail-Regular-webfont.eot') format('eot'),
+	     url('/Fonts/Yellowtail-Regular-webfont.woff') format('woff'),
+	     url('/Fonts/Yellowtail-Regular-webfont.ttf') format('truetype'),
+	     url('/Fonts/Yellowtail-Regular-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  
+}
+
+@font-face{
+    font-family: 'Bebas';
+    src:url('BebasFont/bebasneue-regular-webfont.woff') format('woff');
+    src: url('BebasFont/bebasneue-regular-webfont.eot') format('eot'),
+	     url('BebasFont/bebasneue-regular-webfont.woff') format('woff'),
+	     url('BebasFont/bebasneue-regular-webfont.ttf') format('truetype'),
+	     url('BebasFont/bebasneue-regular-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  
+}
+/* End Custom Fonts*/
+
+
+
+body{
+    background-color: #1C1C1C;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+header{
+    margin: 0;
+   /* background-color:yellow;*/
+    background: url(./images/coffee.png)   center center ;
+    background-size: 1350px;
+    padding-top: 550px;
+    
+}
+
+.container{
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-left: 0px;
+    padding-right: 0px;
+  /*  background-color: #dbc900; */ 
+ 
+}
+
+@media screen and (max-width:700px){
+    .container{
+        padding-left: 0px;
+        padding-right: 0px;
+      
+    }
+}
+
+
+
+/* Start Style Logo*/
+.logo{
+    margin-top: -530px;
+    color: #fff;
+    font-weight:200;
+    margin-left: 4%;
+    bottom: 85%;
+
+}
+
+.theSecond-Word{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #000;
+    background-color: #fff;
+    padding: 3px 24px;
+}
+.first-Word{
+    padding: 3px 24px;
+
+}
+
+@media screen and (max-width:700px) {
+    .logo{
+        margin-left: 0;
+        
+    }
+    
+.theSecond-Word{
+    font-size: 80%;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #000;
+    background-color: #fff;
+    padding: 2px 12px;
+}
+.first-Word{
+    padding: 3px 12px;
+    font-size: 90%;
+}
+
+
+}
+.logo:hover{
+    cursor: pointer;
+}
+/* End Style Logo*/
+
+/* Start text header*/
+.text-header{
+    color: #fff;
+    text-align: center;
+    margin-top: 160px;
+    font-size: 250%;
+}
+
+@media screen and (max-width:700px){
+    .text-header{
+        font-size: 200%;
+
+    }
+}
+/* End text header */
+
+
+
+/* End Style Logo*/
+
+/*start animation button*/
+@keyframes bounce{
+    20%{
+        
+        transform: rotate(8deg);
+    }
+    30%{
+        transform: rotate(-8deg);
+    }
+  
+    40%{
+        transform: rotate(8deg);
+        
+    }
+    
+ 
+
+}
+@-webkit-keyframes bounce{
+    20%{
+        
+        transform: rotate(8deg);
+    }
+    30%{
+        transform: rotate(-8deg);
+    }
+  
+    40%{
+        transform: rotate(8deg);
+        
+    }
+    
+ 
+
+}
+/*end animation button*/
+
+
+
+
+@media screen and (max-width:700px){
+    .text-header{
+        font-size: 200%;
+        
+    }
+}
+header a{
+    text-decoration: none;
+    color: #000;
+    font-size: 160%;
+    background-color:#dbc900;
+    padding: 10px 20px;
+
+}
+/*button More*/
+header a{
+    transition-property: all;
+    transition-duration: 1s;
+}
+header a:hover{
+  
+    color: #fff;
+    background-color: #454442;
+}
+.buttonMore{
+    margin-top: 90px;
+    margin-left: 4%;
+}
+
+@media screen and (max-width:700px) {
+    header a{
+        padding: 9px;
+        font-size: 140%;
+    }
+    .buttonMore{
+        margin-top: 150px;
+        margin-left: 20px;
+    }
+    .squareOne{
+        margin-right: -5px;
+    }
+}
+/*End button More*/
+
+
+
+.content-area{
+   background-color: rgb(23, 29, 122); 
+  
+}
+
+
+
+
+/* start style sqaure*/
+    .squareOne{
+
+    background: url(./images/coffeeGirl.jpg) center center;
+    background-size: cover;
+    float: left;
+    width: 34%; 
+    height: 680px;
+    }
+    
+    .sidebar{
+        position: relative;
+        width: 66%;
+        height: 680px;
+        float: left;
+        background-color: #fff;
+        text-align: center;
+        padding-left: 40px;
+        padding-right: 40px;
+        box-sizing: border-box;
+        font-size:100%;
+        overflow: hidden;
+    }
+
+    .sidebar h1{
+        font-family: 'Yellowtail-Regular-webfont';
+        font-weight: 100;
+        font-size: 280%;
+        margin-top: 18%;
+        letter-spacing: 6px;
+    }
+
+    .sidebar p{
+        font-family: 'Arimo'normal ;
+        font-weight: 400;
+        font-size: 20px;
+        padding-left: 90px;
+        padding-right: 90px;
+    }
+    .sidebar-button{
+        animation: bounce 2s forwards;
+        animation-iteration-count: infinite;
+      
+    }
+    .sidebar-button{
+        
+        position: absolute;
+        margin-left: 35%;
+        margin-top: 7%;
+    
+    }
+    .sidebar-button:hover{
+        -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
+    }
+    .sidebar a{
+        font-family: 'Bebas';
+        font-size: 150%;
+        text-decoration: none;
+        color: #000;
+        border: solid 3px #000;
+        padding: 10px 20px;
+
+    }
+    .sidebar a:hover{
+     transition: 0.7s;
+     background-color: #000;
+     color: #fff;
+
+    }
+  
+    @media screen and (max-width:800px){
+        .sidebar p{
+            font-family: 'Arimo' normal ;
+            font-weight: 400;
+            font-size: 19px;
+            padding-left: 60px;
+            padding-right: 60px;
+        } 
+        .sidebar-button{
+            position: absolute;
+            margin-left: 30%;
+            margin-top: 20px;
+        
+        }
+        
+    }
+    
+ 
+
+    @media screen and (max-width:700px){
+    
+        .squareOne{
+            float: none;
+            width: 100%;
+            height: 500px;
+        }
+        .sidebar{
+            width: 100%;
+            height: 500px;
+            float: none;
+        }
+
+        .sidebar h1{
+            font-size: 200%;
+            margin-top: 10%;
+        }
+
+        .sidebar a{
+            padding: 5px 10px;
+    
+        }
+
+        .sidebar-button{
+         
+            margin-left: 35%;
+            margin-top: 20px;
+        
+        }
+    }
+    @media screen and (max-width:990px){
+        .sidebar-button{
+            margin-left: 33%;
+        }
+    }
+    @media screen and (max-width:700px){
+        .sidebar-button{
+            margin-left: 36%;
+        }
+    }
+    @media screen and (max-width:530px){
+    
+        .sidebar{
+            height: 600px;
+        }
+
+
+        .sidebar p {
+            font-size: 110%;
+        }
+        .sidebar-button{
+            margin-left: 30%;
+        }
+    }
+  
+
+    @media screen and (max-width:480px){
+    
+        .sidebar{
+            height: 600px;
+        }
+
+
+        .sidebar p {
+            font-size: 110%;
+        }
+        .sidebar-button{
+            margin-left: 30%;
+        }
+    }
+    
+    
+/* end style sqaure*/
+
+/* start style icon and text*/
+
+
+
+
+.icon-and-text{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+ /*   background-color: #6b1792 */
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+
+.iconify{
+    float: left;
+    font-size: 230%;
+    color: #fff;
+    margin-top: 28px;
+
+}
+.icon{
+    width: 8%;
+}
+
+.text-for-icon{
+    color: #fff;
+    font-family: 'Arimo' 400 normal ;
+    font-size: 24px;
+    width: 70%;
+    justify-content: right;   
+    height: auto;
+}
+
+@media screen and (max-width:700px){
+
+    .iconify{
+        margin-top: 18px;
+        font-size: 200%;
+        
+    }
+    .icon{
+        margin-top: 20px;
+        width: 12%;
+    }
+    .text-for-icon{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:480px){
+
+ 
+    .icon{
+        margin-top: 30px;
+        margin-left: 30px;
+        padding-right: 20px;
+    }
+  
+}
+
+/* end style icon and text*/
+
+
+
+
+/*start blog content style*/
+.blog-content{
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+   /* background-color: #454442; */
+}
+
+.blog-content h1{
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+    font-weight: 700;
+    margin-top: 60px;
+}
+
+.class-one-photo{
+    display: flex;
+    width: 300px;
+    height: 500px;
+    justify-content: center;
+    float: left;
+   /* background-color: #3d2c08; */
+    padding-left: 150px;
+    
+}
+.one-photo{
+    width: 300px;
+    height: 500px;
+    background-color: #3d2c08;
+    background-image: url(./images/coffe-man.jpg);
+    background-size: cover;
+    background-position: center center;
+    
+}
+
+
+.one-content-blog{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: auto;
+  /*  background-color: #dbc900; */
+  
+}
+ .title{
+    margin-top: 70px;
+    font-weight: 700;
+    font-size: 26px;
+ }
+.one-photo-text{
+    color: #fff;
+    font-family: 'Arimo' 400 normal;
+    font-weight: 400;
+  
+    float: left;
+    line-height: 20px;
+    font-size: 18px;
+    padding-left: 70px;
+    padding-right: 170px;
+    box-sizing: border-box;
+  /*  background-color:brown */
+
+}
+.one-paragraph{
+    margin-top: 50px;
+}
+.two-paragraph{
+    margin-top: 50px;
+}
+
+@media screen and (max-width:990px){
+    .one-content-blog{
+        display: inline-block;
+        width: 100%;
+        justify-content: center;
+    }
+    .one-photo-text{
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    .main-area,
+    .sidebar{
+        width: auto;
+        float: none;
+    }
+    .class-one-photo{
+        width: 100%;
+        padding-left: 0px;
+    }
+}
+/* the second content blog*/
+
+.class-two-photo{
+    display: flex;
+    
+    justify-content: center;
+    float: left;
+   /* background-color: #3d2c08; */
+   padding-left: 150px;
+   
+    
+}
+.two-photo{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    background-color: #3d2c08;
+    background-size: cover;
+    margin-top: 40px;
+    background-position: center center;
+    overflow: hidden;
+   
+}
+
+.two-photo img{
+    
+    display: block;
+    overflow: hidden;
+    transition-property: all;
+    transition-duration: 1s;
+   
+}
+.two-photo:hover img{
+    transform: scale(1.5);
+}
+
+.two-photo p{
+    font-size: 120%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px 113px;
+    bottom: -20px;
+    position: absolute;
+    color: #fff;
+    opacity: 0;
+    transition-property: all;
+    transition-duration: 1s;
+    transform: translateY(100%);
+}
+.two-photo:hover .banner-photo {
+    opacity: 1;
+    transform: translateY(0%);
+
+}
+
+.two-content-blog{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: auto;
+  /*  background-color: #dbc900; */
+  
+}
+ .second-title{
+    margin-top: 70px;
+    font-weight: 700;
+    font-size: 26px;
+ }
+.two-photo-text{
+    color: #fff;
+    font-family: 'Arimo' 400 normal;
+    font-weight: 400;
+  
+    float: left;
+    line-height: 20px;
+    font-size: 18px;
+    padding-left: 70px;
+    padding-right: 170px;
+    box-sizing: border-box;
+  /*  background-color:brown */
+
+}
+.second-one-paragraph{
+    margin-top: 50px;
+}
+
+
+@media screen and (max-width:990px){
+    .two-content-blog{
+        display: inline-block;
+        width: 100%;
+        justify-content: center;
+    }
+    .two-photo-text{
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    .main-area,
+    .sidebar{
+        width: auto;
+        float: none;
+    }
+    .class-two-photo{
+        width: 100%;
+        padding-left: 0px;
+    }
+}
+
+/*end blog content style*/
+
+
+
+/* start footer-end*/
+
+.footer-end{
+    max-width: 100%;
+    margin: 0 auto;
+ 
+  /* background-color: #ffa600af; */
+}
+.inside-footer{
+  /*  background-color: rgba(8, 105, 13, 0.493); */ 
+    overflow: hidden;
+}
+
+.footer-logo{
+    
+    font-size: 150%;
+    float: left;
+
+}
+.footer-first-Word{
+    color:#fff;
+}
+.footer-theSecond-Word{
+    color: #1C1C1C;
+    
+}
+
+.footer-iconify{
+    color: #dbc900;
+}
+
+.footer-icons{
+    float: right;
+    color: #dbc900;
+    font-size: 80%;
+    font-weight:200; 
+    margin-right: 22px;
+  
+
+}
+
+
+.text-footer-icon{
+    color: rgb(255, 255, 255);
+    font-family: 'Arimo' 700 normal;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 21px;
+    float: left;
+    margin-top: 32px;
+    margin-right: 7px;
+}
+.footer-end{
+    border-bottom: solid 1px #383838  ;
+}
+.text-contact{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin-bottom: 30px;
+}
+@media screen and (max-width:700px){
+    .text-footer-icon{
+        margin-top: 22px;
+    }
+
+}
+
+
+/* end footer-end*/
+
+
+
+
+/* start clear and trim*/
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+
+.group:after {
+  clear: both;
+}
+
+.group {
+  zoom: 1;
+}
+/* end clear and trim*/
