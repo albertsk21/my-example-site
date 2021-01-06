@@ -320,6 +320,7 @@ header a:hover{
 
     @media screen and (max-width:700px){
 
+     
         .paragraphOne-sidebar{
             display: none;
         }
@@ -363,6 +364,10 @@ header a:hover{
         }
     }
     @media screen and (max-width:530px){
+        .sidebar h1{
+            margin-top: 80px;
+        }
+
     
         .sidebar{
             height: 600px;
