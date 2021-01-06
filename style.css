@@ -319,6 +319,10 @@ header a:hover{
  
 
     @media screen and (max-width:700px){
+
+        .paragraphOne-sidebar{
+            display: none;
+        }
     
         .squareOne{
             float: none;
@@ -567,6 +571,7 @@ header a:hover{
     
 }
 .two-photo{
+    background: url(./images/blog-image-coffee.jpg);
     position: relative;
     display: flex;
     justify-content: center;
