@@ -359,7 +359,7 @@ header a:hover{
     }
     @media screen and (max-width:700px){
         .sidebar-button{
-            margin-left: 36%;
+            margin-left: 35%;
         }
     }
     @media screen and (max-width:530px){
@@ -389,7 +389,7 @@ header a:hover{
             font-size: 110%;
         }
         .sidebar-button{
-            margin-left: 30%;
+            margin-left: 28%;
         }
     }
     
