@@ -525,7 +525,7 @@ header a:hover{
     line-height: 20px;
     font-size: 18px;
     padding-left: 70px;
-    padding-right: 170px;
+    padding-right: 70px;
     box-sizing: border-box;
   /*  background-color:brown */
 
@@ -637,7 +637,7 @@ header a:hover{
     line-height: 20px;
     font-size: 18px;
     padding-left: 70px;
-    padding-right: 170px;
+    padding-right: 70px;
     box-sizing: border-box;
   /*  background-color:brown */
 
@@ -665,6 +665,13 @@ header a:hover{
     .class-two-photo{
         width: 100%;
         padding-left: 0px;
+    }
+}
+
+@media screen and (max-width:500px){
+    .second-one-paragraph{
+        padding-left: 0px;
+        padding-right: 0px;
     }
 }
 
